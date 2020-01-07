@@ -26,3 +26,8 @@
 /ASCII.zip
 /ASCII.java
 /sheet.xlsx
+/bin/
+/target/
+/.classpath
+/.project
+/.settings/*
