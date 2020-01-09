@@ -8,10 +8,16 @@
 	<!-- POM relationships -->
 	<!-- =========================================================== -->
 
+	<!-- Parent Maven coordinates -->
+	<parent>
+		<groupId>org.funz</groupId>
+		<artifactId>funz-parent</artifactId>
+		<version>1.9.0-SNAPSHOT</version>
+	</parent>
+	
+
 	<!-- Maven coordinates -->
-	<groupId>org.funz</groupId>
 	<artifactId>funz-core</artifactId>
-	<version>1.9.0-SNAPSHOT</version>
 
 	<!-- Dependencies -->
 	<dependencies>
@@ -70,11 +76,7 @@
 	<packaging>bundle</packaging>
 
 	<!-- Properties -->
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<org.osgi.framework.version>[1.5, 2.0)</org.osgi.framework.version>
-	</properties>
-
+	<properties/>
 
 	<!-- Build -->
 	<build>
@@ -82,53 +84,19 @@
 			<plugin>
 				<groupId>org.apache.felix</groupId>
 				<artifactId>maven-bundle-plugin</artifactId>
-				<version>4.0.0</version>
-				<extensions>true</extensions>
-				<executions>
-					<execution>
-						<goals>
-							<goal>deploy</goal>
-						</goals>
-					</execution>
-				</executions>
 				<configuration>
 					<instructions>
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
 						<Export-Package>
-							org.funz;version=${project.version},
+							org.funz.constants;version=${project.version},
 							org.funz.log;version=${project.version},
 							org.funz.util;version=${project.version},
 						</Export-Package>
 					</instructions>
 				</configuration>
 			</plugin>
-			<!-- Check Maven and Java versions are okay -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-enforcer-plugin</artifactId>
-				<version>3.0.0-M2</version>
-				<executions>
-					<execution>
-						<id>enforce-versions</id>
-						<goals>
-							<goal>enforce</goal>
-						</goals>
-						<configuration>
-							<rules>
-								<requireMavenVersion>
-									<version>2.0.6</version>
-								</requireMavenVersion>
-								<requireJavaVersion>
-									<version>1.8</version>
-								</requireJavaVersion>
-							</rules>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
 			<plugin>
 				<artifactId>maven-antrun-plugin</artifactId>
-				<version>1.8</version>
 				<executions>
 					<execution>
 						<id>generateConstants</id>

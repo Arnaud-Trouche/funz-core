@@ -31,3 +31,8 @@
 /.classpath
 /.project
 /.settings/*
+/doc/
+/*file
+/*.sh
+/*.R
+/*.py

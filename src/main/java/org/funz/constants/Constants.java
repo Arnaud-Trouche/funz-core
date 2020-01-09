@@ -1,4 +1,4 @@
-package org.funz;
+package org.funz.constants;
 
 import java.io.*;
 
@@ -11,8 +11,8 @@ public class Constants
         APP_NAME_PROPERTY = "app.name",
         APP_HOME_PROPERTY = "app.home",
         APP_USER_PROPERTY = "app.user",
-        APP_VERSION = "__VERSION__",
-        APP_BUILD_DATE = "__BUILDATE__";
+        APP_VERSION = "1.9",
+        APP_BUILD_DATE = "09/01/2020 11:00";
 
     public static String APP_NAME = "Funz";
 

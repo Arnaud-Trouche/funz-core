@@ -18,7 +18,7 @@ import java.util.Calendar;
 import java.util.LinkedList;
 import java.util.List;
 import org.apache.commons.io.FileUtils;
-import org.funz.Protocol;
+import org.funz.constants.Protocol;
 
 public class Disk {
 
