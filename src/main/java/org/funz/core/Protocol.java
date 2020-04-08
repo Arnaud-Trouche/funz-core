@@ -1,4 +1,4 @@
-package org.funz.constants;
+package org.funz.core;
 
 /**
  * Network protocol headers and constants

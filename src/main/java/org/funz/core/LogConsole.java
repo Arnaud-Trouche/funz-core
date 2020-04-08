@@ -1,8 +1,9 @@
-package org.funz.log;
+package org.funz.core;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import org.funz.log.LogCollector.SeverityLevel;
+
+import org.funz.core.LogCollector.SeverityLevel;
 
 /**
  * Implements InfoCollector as text console.

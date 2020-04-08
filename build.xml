@@ -28,8 +28,8 @@
 	<!-- funz core dependent properties -->
 	<property file="funz-core.properties"/>
 
-	<property name="constants.java" location="${src.dir}/org/funz/constants/Constants.java" />
-	<property name="constants.tmpl" location="${src.dir}/org/funz/constants/Constants.tmpl" />
+	<property name="constants.java" location="${src.dir}/org/funz/core/Constants.java" />
+	<property name="constants.tmpl" location="${src.dir}/org/funz/core/Constants.tmpl" />
 
 
 	<!-- Clean targets -->

@@ -1,4 +1,4 @@
-package org.funz.constants;
+package org.funz.core;
 
 /** Used to save/load projects */
 public interface XMLConstants {

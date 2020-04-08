@@ -1,4 +1,4 @@
-package org.funz.log;
+package org.funz.core;
 
 import java.io.File;
 import java.io.FileNotFoundException;

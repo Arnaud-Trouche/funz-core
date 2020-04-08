@@ -1,5 +1,7 @@
 package org.funz.util;
 
+import static org.funz.core.LogCollector.SeverityLevel.INFO;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -12,8 +14,8 @@ import java.util.Calendar;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
-import org.funz.log.LogCollector;
-import static org.funz.log.LogCollector.SeverityLevel.INFO;
+
+import org.funz.core.LogCollector;
 
 public class ZipTool {
 

@@ -1,4 +1,4 @@
-package org.funz.log;
+package org.funz.core;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

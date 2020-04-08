@@ -87,9 +87,11 @@
 				<configuration>
 					<instructions>
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+						<Private-Package>
+							org.funz;version=${project.version},
+						</Private-Package>
 						<Export-Package>
-							org.funz.constants;version=${project.version},
-							org.funz.log;version=${project.version},
+							org.funz.core;version=${project.version},
 							org.funz.util;version=${project.version},
 						</Export-Package>
 					</instructions>

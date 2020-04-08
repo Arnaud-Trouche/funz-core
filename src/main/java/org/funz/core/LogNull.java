@@ -1,4 +1,4 @@
-package org.funz.log;
+package org.funz.core;
 
 /**
  * Implements a text logger.

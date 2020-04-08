@@ -1,4 +1,4 @@
-package org.funz.log;
+package org.funz.core;
 
 public interface LogCollector {
     /// Severity level
