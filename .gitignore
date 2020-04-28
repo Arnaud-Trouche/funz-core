@@ -5,7 +5,6 @@
 /build/
 /tmp/
 /nbproject/
-/dist/
 /test/
 
 /*.png
@@ -36,5 +35,5 @@
 /*.sh
 /*.R
 /*.py
-/**/Constants.java
 /coverage/
+/**/Constants.java
